@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+*~
+
+# MNIST cache (re-downloaded on first use by horn.data.load_mnist)
+data/*
+!data/.gitkeep
+
+# local experiment dumps
+out/
+*.png
+!notebooks/**
