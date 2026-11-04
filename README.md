@@ -1,5 +1,5 @@
 # HORN tutorial: from a single oscillator to sequential MNIST 
-A proposed course tutorial for KTH's Advanced Neural Networks course (because they are cool and certainly more advanced that standard ANNs)
+A proposed course tutorial for KTH's Advanced Neural Networks course (because they are cool and certainly more advanced than ANNs from the basic course)
 
 This is a hands-on introduction to **Harmonic Oscillator Recurrent Networks (HORNs)**, after
 > F. Effenberger, P. Carvalho, I. Dubinin & W. Singer, *The functional role of oscillatory dynamics in neocortical circuits: A computational perspective*, PNAS 122(4) e2412830122 (2025). Reference code: [github.com/exilef/horn](https://github.com/exilef/horn).
