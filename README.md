@@ -1,12 +1,13 @@
-# HORN — a toy Harmonic Oscillator Recurrent Network
+# HORN tutorial: from a single oscillator to sequential MNIST 
 
-A small, didactic **NumPy** implementation of the networks in
+# A proposed course tutorial for KTH's Advanced Neural Networks course
+(Because HORN are cool and certainly more advanced that standard ANNs)
 
-> F. Effenberger, P. Carvalho, I. Dubinin & W. Singer,
-> *The functional role of oscillatory dynamics in neocortical circuits: A computational perspective*,
-> [PNAS 122(4) e2412830122 (2025)](https://doi.org/10.1073/pnas.2412830122).
+This is a hands-on introduction to **Harmonic Oscillator Recurrent Networks (HORNs)**, after
 
-The authors' PyTorch reference is [github.com/exilef/horn](https://github.com/exilef/horn). This repository reimplements the same update equations with a **hand-written backward pass** (backpropagation through time), so every gradient can be inspected. The tutorial notebook walks from a single oscillator to training a tiny network on XOR and then sequential MNIST.
+> F. Effenberger, P. Carvalho, I. Dubinin & W. Singer, *The functional role of oscillatory dynamics in neocortical circuits: A computational perspective*, PNAS 122(4) e2412830122 (2025). Reference code: [github.com/exilef/horn](https://github.com/exilef/horn).
+
+For students to be able to run this themselves, everything here runs on a small, pure-NumPy implementation that lives in the `horn/` package of this repository. I purposefully avoid using torch.autograd: the backward pass (backpropagation through time) is written out by hand in `horn/network.py`, meaning we will be able to see the chain rule in action on a simple XOR task which students know from the ANN course (also temporal XOR). My idea was to make this presentation of HORN somewhat more useful for educational purposes by avoiding ML libraries, such that every line of code that is executed can be read and comprehended before students jump to use Pytorch.
 
 ## Start here
 
